@@ -1,0 +1,484 @@
+* {
+  width: 100%;
+  margin: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  width: 100%;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 1% 0;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .fa-solid-fa-arrow-left {
+  width: 40px;
+}
+
+header a {
+  width: 10%;
+  cursor: pointer;
+}
+
+header a i {
+  width: 40px;
+  color: black;
+  text-align: center;
+  font-size: 2rem;
+}
+
+header .logo {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  cursor: pointer;
+}
+
+header .logo a {
+  text-decoration: none;
+  width: 100%;
+}
+
+header .logo a h1 {
+  width: 100%;
+  text-align: center;
+}
+
+header .logo h1 {
+  width: 50%;
+  font-family: 'Shrikhand', cursive;
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+}
+
+section {
+  width: 100%;
+  background-color: #f4f4f4;
+  border-radius: 1.5rem 1.5rem 0 0;
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+}
+
+section .palette {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .palette h2 {
+  font-family: 'Shrikhand', cursive;
+  padding: 20px 0 20px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-bottom: 15px;
+  padding-left: 5px;
+  padding-bottom: 3px;
+  width: 60%;
+}
+
+section .menu {
+  width: 95%;
+  margin: 0;
+}
+
+section .menu h2 {
+  padding: 20px 0 10px 15px;
+  font-size: 1.3rem;
+  border-bottom: 3px solid #a5e2d5;
+  width: 30%;
+}
+
+section .menu .entrees {
+  -webkit-animation: start 2s;
+          animation: start 2s;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+section .menu .plats {
+  -webkit-animation: start 2s;
+          animation: start 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+section .menu .desserts {
+  -webkit-animation: start 2s;
+          animation: start 2s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes start {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes start {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+section img {
+  width: 100%;
+}
+
+section .fa-stack {
+  font-size: 2rem;
+  margin-left: auto;
+  padding-right: 20px;
+}
+
+section .fa-stack .fas {
+  opacity: 0;
+  background: #ff79da;
+  background: linear-gradient(30deg, #ff79da 39%, #9356dc 42%);
+  background: -webkit-gradient(linear, right top, left bottom, from(#9456dc), to(#ff79db));
+  background: linear-gradient(to bottom left, #9456dc, #ff79db);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+section .fa-stack .fas:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+section .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  border-radius: 0.8rem;
+  margin: 10px 0 20px 0;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.6rem #bdbdbd;
+          box-shadow: 0.2rem 0.2rem 0.6rem #bdbdbd;
+  overflow: hidden;
+  width: 90%;
+  margin-left: 10px;
+}
+
+section .card .fa-solid.fa-circle-check {
+  -webkit-transition: all 0.75s;
+  transition: all 0.75s;
+}
+
+section .card:hover .card_checked {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateX(5%);
+          transform: translateX(5%);
+}
+
+section .card:hover .price {
+  -webkit-transform: translateX(-80%);
+          transform: translateX(-80%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section .card:hover .fa-solid.fa-circle-check {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+section .card .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+section .card .name h3 {
+  padding: 5px 10px 5px 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+section .card .name p {
+  padding: 0 10px 0 10px;
+  font-weight: 300;
+  font-size: 0.8rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+section .card .name p span {
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: right;
+}
+
+section .card .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 5%;
+}
+
+section .card .price p {
+  padding-left: 0px;
+}
+
+section .card .card_checked {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 10%;
+  background-color: #99e2d0;
+  color: white;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+section .card .card_checked i {
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+  height: 100%;
+  vertical-align: middle;
+  padding-top: 35px;
+}
+
+section button {
+  width: 80%;
+  padding: 15px 0;
+  margin: 40px 0;
+  margin-left: 9%;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-box-shadow: 0px 0px 26px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 26px -13px rgba(0, 0, 0, 0.75);
+}
+
+section button:hover {
+  opacity: 0.8;
+  -webkit-box-shadow: 0px 0px 30px -6px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 30px -6px rgba(0, 0, 0, 0.75);
+}
+
+footer {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: -50px;
+  background-color: #343434;
+  color: white;
+}
+
+footer h2 {
+  color: white;
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.1rem;
+}
+
+footer p {
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 5px;
+  width: 100%;
+}
+
+footer li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer i {
+  padding: 5px 5px;
+  width: 20px;
+  color: white;
+}
+
+@media only screen and (min-width: 400px) {
+  section .card .name h3 {
+    padding: 5px 10px 5px 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  section .card .name p {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    width: 100%;
+  }
+  .img {
+    width: 100%;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .palette h2 {
+    font-size: 1.8rem;
+  }
+  footer h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  html {
+    width: 100%;
+  }
+  .img {
+    width: 100%;
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  h2 {
+    text-align: left;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menu h2 {
+    height: 20px;
+  }
+  section .card {
+    width: 90%;
+    margin-right: 20px;
+  }
+  .card_checked {
+    width: 30%;
+  }
+  section .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section .btn button {
+    width: 25%;
+  }
+  footer {
+    padding: 20px 0;
+  }
+  footer h2 {
+    padding-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+}
+/*# sourceMappingURL=palette.css.map */

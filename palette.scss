@@ -1,0 +1,481 @@
+$violet:#9356DC;
+$rose:#FF79DA;
+* {
+    width: 100%;
+    margin: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+html {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    padding: 1% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .fa-solid-fa-arrow-left {
+        width: 40px;
+    }
+
+    a {
+        width: 10%;
+        cursor: pointer;
+
+        i {
+            width: 40px;
+            color: black;
+            text-align: center;
+            font-size: 2rem;
+
+
+        }
+    }
+
+
+    .logo {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        cursor: pointer;
+
+        a {
+            text-decoration: none;
+            width: 100%;
+
+            h1 {
+                width: 100%;
+                text-align: center;
+
+            }
+        }
+
+
+
+        h1 {
+            width: 50%;
+            font-family: 'Shrikhand', cursive;
+            color: black;
+            text-decoration: none;
+        }
+    }
+
+}
+
+
+
+
+
+body {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    background-color: #f4f4f4;
+    border-radius: 1.5rem 1.5rem 0 0;
+    transform: translateY(-5%);
+
+    .palette {
+        display: flex;
+
+        h2 {
+            font-family: 'Shrikhand', cursive;
+            padding: 20px 0 20px 15px;
+            display: flex;
+            font-size: 1.3rem;
+            font-weight: 300;
+            margin-bottom: 15px;
+            padding-left: 5px;
+            padding-bottom: 3px;
+            width: 60%;
+        }
+    }
+
+    .menu {
+        width: 95%;
+        margin: 0;
+
+        h2 {
+            padding: 20px 0 10px 15px;
+            font-size: 1.3rem;
+            border-bottom: 3px solid #a5e2d5;
+            width: 30%;
+
+        }
+
+        .entrees {
+            animation: start 2s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+
+        .plats {
+            animation: start 2s;
+            animation-delay:1s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+
+
+        }
+
+        .desserts {
+            animation: start 2s;
+            animation-delay:2s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+
+
+        }
+
+        @keyframes start {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+
+            }
+        }
+
+    }
+
+    img {
+        width: 100%;
+
+    }
+
+
+
+    .fa-stack {
+        font-size: 2rem;
+        margin-left: auto;
+        padding-right: 20px;
+
+        .fas {
+            opacity: 0;
+            background: rgb(255, 121, 218);
+            background: linear-gradient(30deg, rgba(255, 121, 218, 1) 39%, rgba(147, 86, 220, 1) 42%);
+            background: linear-gradient(to bottom left, rgba(148, 86, 220, 1.0), rgba(255, 121, 219, 1.0));
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .card {
+        display: flex;
+        background-color: white;
+        border-radius: 0.8rem;
+        margin: 10px 0 20px 0;
+        box-shadow: 0.2rem 0.2rem 0.6rem #bdbdbd;
+        overflow: hidden;
+        width: 90%;
+        margin-left: 10px;
+        .fa-solid.fa-circle-check {
+            transition: all 0.75s;
+        }
+
+        &:hover {
+            .card_checked {
+                transition: 0.5s;
+                transform: translateX(5%);
+            }
+
+            .price {
+                transform: translateX(-80%);
+                transition: 0.5s;
+            }
+
+            .fa-solid.fa-circle-check {
+                transform: rotate(360deg);
+            }
+        }
+
+        .name {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+
+            h3 {
+                padding: 5px 10px 5px 10px;
+                font-size: 1rem;
+                font-weight: 500;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+
+            }
+
+            p {
+                padding: 0 10px 0 10px;
+                font-weight: 300;
+                font-size: 0.8rem;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+
+                span {
+                    font-weight: 500;
+                    font-size: 1rem;
+                    text-align: right;
+                }
+            }
+
+        }
+
+        .price {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 5%;
+
+            p {
+                padding-left: 0px;
+            }
+        }
+
+        .card_checked {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 10%;
+            background-color: #99e2d0;
+            color: white;
+            transform: translateX(100%);
+
+            i {
+                color: white;
+                text-align: center;
+                font-size: 1.3rem;
+                height: 100%;
+                vertical-align: middle;
+                padding-top: 35px;
+
+
+            }
+        }
+    }
+
+    button {
+        width: 80%;
+        padding: 15px 0;
+        margin: 40px 0;
+        margin-left: 9%;
+        border: none;
+        border-radius: 2rem;
+        color: white;
+        font-size: 1.2rem;
+        cursor: pointer;
+        background: linear-gradient($rose, $violet);
+        -webkit-box-shadow: 0px 0px 26px -13px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 26px -13px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 26px -13px rgba(0, 0, 0, 0.75);
+
+        &:hover {
+            opacity: 0.8;
+            box-shadow: 0px 0px 30px -6px rgba(0, 0, 0, 0.75);
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: -50px;
+    background-color: #343434;
+    color: white;
+
+    h2 {
+        color: rgb(255, 255, 255);
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.1rem;
+    }
+
+    p {
+        padding-bottom: 10px;
+        width: 100%;
+
+    }
+
+    ul {
+        padding-left: 0;
+    }
+
+    li {
+        display: flex;
+        padding-left: 5px;
+        width: 100%;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    i {
+        padding: 5px 5px;
+        width: 20px;
+        color: white;
+    }
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 400px) {
+
+    section .card .name h3 {
+        padding: 5px 10px 5px 10px;
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
+    }
+
+    section .card .name p {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        width: 100%;
+    }
+
+    .img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .palette {
+        h2 {
+            font-size: 1.8rem;
+
+        }
+    }
+
+    footer {
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1050px) {
+    html {
+        width: 100%;
+    }
+
+    .img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    h2 {
+        text-align: left;
+    }
+
+
+    .menu {
+        display: flex;
+
+        h2 {
+            height: 20px;
+        }
+
+    }
+
+    section .card {
+        width: 90%;
+        margin-right: 20px;
+    }
+
+    .card_checked {
+        width: 30%;
+    }
+
+    section {
+        .btn {
+            display: flex;
+            justify-content: center;
+
+            button {
+                width: 25%;
+
+            }
+        }
+
+    }
+
+    footer {
+        padding: 20px 0;
+
+        h2 {
+            padding-top: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+}
