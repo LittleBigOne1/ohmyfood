@@ -12,13 +12,20 @@ body {
   width: 100%;
 }
 
-body .oader {
+body .loader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-animation: loader 1000ms 4000ms ease-in-out forwards;
           animation: loader 1000ms 4000ms ease-in-out forwards;
   position: fixed;
@@ -35,27 +42,7 @@ body .oader {
   overflow: hidden;
 }
 
-@-webkit-keyframes loader {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    height: 0vh;
-  }
-}
-
-@keyframes loader {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    height: 0vh;
-  }
-}
-
-body .oader h1 {
+body .loader h1 {
   text-align: center;
   width: 100%;
   margin: 0;
@@ -63,126 +50,15 @@ body .oader h1 {
   padding: 0;
   font-family: 'Shrikhand', cursive;
   font-weight: 900;
-  font-size: 2em;
+  font-size: 2.5em;
   color: #9356DC;
-  text-shadow: 3px 4px 1px #FF79DA;
+  text-shadow: 2px 2px 1px #FF79DA;
 }
 
-body .oader span {
-  position: relative;
-  top: 0.63em;
-  display: inline-block;
-  text-transform: uppercase;
-  opacity: 0;
-  -webkit-transform: rotateX(-90deg);
-          transform: rotateX(-90deg);
-  font-family: 'Shrikhand', cursive;
-}
-
-body .oader .let1 {
-  -webkit-animation: drop 1.2s ease-in-out infinite;
-          animation: drop 1.2s ease-in-out infinite;
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
-}
-
-body .oader .let2 {
-  -webkit-animation: drop 1.2s ease-in-out infinite;
-          animation: drop 1.2s ease-in-out infinite;
-  -webkit-animation-delay: 1.3s;
-          animation-delay: 1.3s;
-}
-
-body .oader .let3 {
-  -webkit-animation: drop 1.2s ease-in-out infinite;
-          animation: drop 1.2s ease-in-out infinite;
-  -webkit-animation-delay: 1.4s;
-          animation-delay: 1.4s;
-}
-
-body .oader .let4 {
-  -webkit-animation: drop 1.2s ease-in-out infinite;
-          animation: drop 1.2s ease-in-out infinite;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-}
-
-body .oader .let5 {
-  -webkit-animation: drop 1.2s ease-in-out infinite;
-          animation: drop 1.2s ease-in-out infinite;
-  -webkit-animation-delay: 1.6s;
-          animation-delay: 1.6s;
-}
-
-body .oader .let6 {
-  -webkit-animation: drop 1.2s ease-in-out infinite;
-          animation: drop 1.2s ease-in-out infinite;
-  -webkit-animation-delay: 1.7s;
-          animation-delay: 1.7s;
-}
-
-body .oader .let7 {
-  -webkit-animation: drop 1.2s ease-in-out infinite;
-          animation: drop 1.2s ease-in-out infinite;
-  -webkit-animation-delay: 1.8s;
-          animation-delay: 1.8s;
-}
-
-body .oader .let8 {
-  -webkit-animation: drop 1.2s ease-in-out infinite;
-          animation: drop 1.2s ease-in-out infinite;
-  -webkit-animation-delay: 1.9s;
-          animation-delay: 1.9s;
-}
-
-@-webkit-keyframes drop {
-  10% {
-    opacity: 0.5;
-  }
-  20% {
-    opacity: 1;
-    top: 3.78em;
-    -webkit-transform: rotateX(-360deg);
-            transform: rotateX(-360deg);
-  }
-  80% {
-    opacity: 1;
-    top: 3.78em;
-    -webkit-transform: rotateX(-360deg);
-            transform: rotateX(-360deg);
-  }
-  90% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-    top: 6.94em;
-  }
-}
-
-@keyframes drop {
-  10% {
-    opacity: 0.5;
-  }
-  20% {
-    opacity: 1;
-    top: 3.78em;
-    -webkit-transform: rotateX(-360deg);
-            transform: rotateX(-360deg);
-  }
-  80% {
-    opacity: 1;
-    top: 3.78em;
-    -webkit-transform: rotateX(-360deg);
-            transform: rotateX(-360deg);
-  }
-  90% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-    top: 6.94em;
-  }
+body .loader h1 .fa-solid {
+  color: white;
+  margin-top: 30px;
+  font-size: 5rem;
 }
 
 body .logo {
@@ -208,10 +84,6 @@ body .logo a h1 {
   max-width: 300px;
   font-family: 'Shrikhand', cursive;
   color: black;
-  text-decoration: none;
-}
-
-body .logo a h1 a {
   text-decoration: none;
 }
 
@@ -298,6 +170,17 @@ body section .reserver a:hover {
   opacity: 0.8;
   -webkit-box-shadow: 0px 0px 18px -6px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 0px 18px -6px rgba(0, 0, 0, 0.75);
+}
+
+body section a {
+  height: 22px;
+}
+
+body section a p {
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
 }
 
 body .section2 {
@@ -465,6 +348,7 @@ body .section3 .body__card .body__card__text {
   margin: 0;
   padding: 0;
   width: 80%;
+  padding-left: 10px;
 }
 
 body .section3 .body__card .body__card__text h3 {
@@ -578,6 +462,11 @@ body footer a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding: 0;
+  }
+  .section2 .fonctionnement #one,
+  .section2 .fonctionnement #two,
+  .section2 .fonctionnement #three {
+    margin-right: 30px;
   }
   .section2 .fonctionnement body .section2 #one,
   .section2 .fonctionnement body .section2 #two,
