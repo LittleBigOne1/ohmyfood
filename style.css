@@ -12,6 +12,26 @@ body {
   width: 100%;
 }
 
+@-webkit-keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    height: 0vh;
+  }
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    height: 0vh;
+  }
+}
+
 body .loader {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,18 +70,18 @@ body .loader h1 {
   padding: 0;
   font-family: 'Shrikhand', cursive;
   font-weight: 900;
-  font-size: 2.5em;
+  font-size: 3em;
   color: #9356DC;
   text-shadow: 2px 2px 1px #FF79DA;
 }
 
-body .loader h1 .fa-solid {
-  color: white;
+body .loader .fa-spin {
+  color: #FF79DA;
   margin-top: 30px;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
-body .logo {
+.logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,11 +95,11 @@ body .logo {
   height: 100px;
 }
 
-body .logo a {
+.logo a {
   text-decoration: none;
 }
 
-body .logo a h1 {
+.logo a h1 {
   width: 50%;
   max-width: 300px;
   font-family: 'Shrikhand', cursive;
@@ -87,19 +107,19 @@ body .logo a h1 {
   text-decoration: none;
 }
 
-body .logo .fa-solid-fa-location-dot {
+.logo .fa-solid-fa-location-dot {
   width: 20px;
 }
 
-body .logo i {
+.logo i {
   width: 20px;
 }
 
-body header {
+header {
   width: 100%;
 }
 
-body .location {
+.location {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,7 +134,7 @@ body .location {
   color: #3f3f3f;
 }
 
-body .location .location__input {
+.location .location__input {
   background-color: lightgray;
   border: none;
   font-size: 1rem;
@@ -122,11 +142,11 @@ body .location .location__input {
   width: 40%;
 }
 
-body .location i {
+.location i {
   width: 20px;
 }
 
-body section {
+section {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,18 +158,18 @@ body section {
   background-color: #e7e7e7;
 }
 
-body section h1 {
+section h1 {
   font-weight: 900;
   padding-bottom: 20px;
 }
 
-body section p {
+section p {
   padding: 0 20px 20px 0;
   color: #666666;
   font-weight: 200;
 }
 
-body section .reserver a {
+section .reserver a {
   display: block;
   width: 70%;
   margin-left: auto;
@@ -166,24 +186,24 @@ body section .reserver a {
   transition: all ease-in-out 0.3s;
 }
 
-body section .reserver a:hover {
+section .reserver a:hover {
   opacity: 0.8;
   -webkit-box-shadow: 0px 0px 18px -6px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 0px 18px -6px rgba(0, 0, 0, 0.75);
 }
 
-body section a {
+section a {
   height: 22px;
 }
 
-body section a p {
+section a p {
   color: white;
   font-weight: 400;
   text-align: center;
   vertical-align: middle;
 }
 
-body .section2 {
+.section2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,13 +215,13 @@ body .section2 {
           align-items: center;
 }
 
-body .section2 .fonctionnement {
+.section2 .fonctionnement {
   width: 90%;
 }
 
-body .section2 #one,
-body .section2 #two,
-body .section2 #three {
+.section2 #one,
+.section2 #two,
+.section2 #three {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,24 +238,24 @@ body .section2 #three {
   transition: ease-in-out 0.2s;
 }
 
-body .section2 #one p,
-body .section2 #two p,
-body .section2 #three p {
+.section2 #one p,
+.section2 #two p,
+.section2 #three p {
   padding-right: 20px;
 }
 
-body .section2 #one .fontionnement__body,
-body .section2 #two .fontionnement__body,
-body .section2 #three .fontionnement__body {
+.section2 #one .fontionnement__body,
+.section2 #two .fontionnement__body,
+.section2 #three .fontionnement__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
 
-body .section2 #one:hover,
-body .section2 #two:hover,
-body .section2 #three:hover {
+.section2 #one:hover,
+.section2 #two:hover,
+.section2 #three:hover {
   background-color: #f4ecfc;
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
@@ -244,13 +264,13 @@ body .section2 #three:hover {
           box-shadow: 0px 0px 38px -6px rgba(0, 0, 0, 0.75);
 }
 
-body .section2 #one:hover i,
-body .section2 #two:hover i,
-body .section2 #three:hover i {
+.section2 #one:hover i,
+.section2 #two:hover i,
+.section2 #three:hover i {
   color: #9356DC;
 }
 
-body .section2 i {
+.section2 i {
   padding-right: 20px;
   padding-left: 15px;
   -webkit-transform: scale(1.1);
@@ -258,11 +278,11 @@ body .section2 i {
   color: gray;
 }
 
-body .section2 p {
+.section2 p {
   padding: 0;
 }
 
-body .section2 .numbers {
+.section2 .numbers {
   color: white;
   background-color: #9356DC;
   padding: 8px 12px 16px 12px;
@@ -272,7 +292,7 @@ body .section2 .numbers {
   margin-left: -14px;
 }
 
-body .section3 {
+.section3 {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -289,19 +309,19 @@ body .section3 {
           align-items: center;
 }
 
-body .section3 h2 {
+.section3 h2 {
   padding: 10px 0 20px 40px;
 }
 
-body .section3 .restos {
+.section3 .restos {
   padding-bottom: 70px;
   width: 90%;
 }
 
-body .section3 #resto1,
-body .section3 #resto2,
-body .section3 #resto3,
-body .section3 #resto4 {
+.section3 #resto1,
+.section3 #resto2,
+.section3 #resto3,
+.section3 #resto4 {
   width: 100%;
   height: 250px;
   margin-bottom: 25px;
@@ -314,17 +334,17 @@ body .section3 #resto4 {
   transition: ease-in-out 0.2s;
 }
 
-body .section3 #resto1:hover,
-body .section3 #resto2:hover,
-body .section3 #resto3:hover,
-body .section3 #resto4:hover {
+.section3 #resto1:hover,
+.section3 #resto2:hover,
+.section3 #resto3:hover,
+.section3 #resto4:hover {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
   -webkit-box-shadow: 0px 0px 27px -7px rgba(0, 0, 0, 0.84);
   box-shadow: 0px 0px 27px -7px rgba(0, 0, 0, 0.84);
 }
 
-body .section3 img {
+.section3 img {
   width: 100%;
   height: 70%;
   border-radius: 1.2rem 1.2rem 0 0;
@@ -332,7 +352,7 @@ body .section3 img {
      object-fit: cover;
 }
 
-body .section3 .body__card {
+.section3 .body__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -344,19 +364,19 @@ body .section3 .body__card {
           align-items: center;
 }
 
-body .section3 .body__card .body__card__text {
+.section3 .body__card .body__card__text {
   margin: 0;
   padding: 0;
   width: 80%;
   padding-left: 10px;
 }
 
-body .section3 .body__card .body__card__text h3 {
+.section3 .body__card .body__card__text h3 {
   padding-top: 6px;
   padding-bottom: 5px;
 }
 
-body .section3 .new {
+.section3 .new {
   background-color: #99E2D0;
   color: #1A9B7B;
   font-size: 0.8rem;
@@ -368,17 +388,17 @@ body .section3 .new {
   border-radius: 0.1rem;
 }
 
-body .section3 .new p {
+.section3 .new p {
   padding: 5px 10px;
 }
 
-body .section3 a {
+.section3 a {
   text-decoration: none;
   color: black;
   height: 100%;
 }
 
-body .section3 .fa-stack {
+.section3 .fa-stack {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -391,7 +411,7 @@ body .section3 .fa-stack {
   font-size: 2rem;
 }
 
-body .section3 .fa-stack .fas {
+.section3 .fa-stack .fas {
   opacity: 0;
   background: #ff79da;
   background: linear-gradient(30deg, #ff79da 39%, #9356dc 42%);
@@ -403,42 +423,42 @@ body .section3 .fa-stack .fas {
   transition: all 0.5s ease-in-out;
 }
 
-body .section3 .fa-stack .fas:hover {
+.section3 .fa-stack .fas:hover {
   opacity: 1;
   cursor: pointer;
 }
 
-body footer {
+footer {
   padding: 20px 10px;
   margin-top: -50px;
   background-color: #343434;
   color: white;
 }
 
-body footer h2 {
+footer h2 {
   color: white;
   font-family: 'Shrikhand', cursive;
   font-size: 1.4rem;
   padding: 10px 10px;
 }
 
-body footer p {
+footer p {
   padding-bottom: 10px;
 }
 
-body footer li {
+footer li {
   padding-left: 5px;
   text-decoration: none;
   list-style-type: none;
 }
 
-body footer i {
+footer i {
   padding: 5px 5px;
   width: 20px;
   color: white;
 }
 
-body footer a {
+footer a {
   text-decoration: none;
   color: white;
   display: -webkit-box;
