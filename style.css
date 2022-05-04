@@ -146,7 +146,7 @@ header {
   width: 20px;
 }
 
-section {
+.section1 {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -158,18 +158,18 @@ section {
   background-color: #e7e7e7;
 }
 
-section h1 {
+.section1 h1 {
   font-weight: 900;
   padding-bottom: 20px;
 }
 
-section p {
+.section1 p {
   padding: 0 20px 20px 0;
   color: #666666;
   font-weight: 200;
 }
 
-section .reserver a {
+.section1 .reserver a {
   display: block;
   width: 70%;
   margin-left: auto;
@@ -186,17 +186,17 @@ section .reserver a {
   transition: all ease-in-out 0.3s;
 }
 
-section .reserver a:hover {
+.section1 .reserver a:hover {
   opacity: 0.8;
   -webkit-box-shadow: 0px 0px 18px -6px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 0px 18px -6px rgba(0, 0, 0, 0.75);
 }
 
-section a {
+.section1 a {
   height: 22px;
 }
 
-section a p {
+.section1 a p {
   color: white;
   font-weight: 400;
   text-align: center;
