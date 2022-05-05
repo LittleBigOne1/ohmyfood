@@ -167,9 +167,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 30px 0;
+
 
   .fonctionnement {
     width: 90%;
+    padding: 30px 0;
   }
 
   #one,
@@ -237,8 +240,8 @@ header {
   justify-content: center;
   align-items: center;
 
-  h2 {
-    padding: 10px 0 20px 40px;
+  .section3 h2 {
+    padding: 20px 0;
   }
 
   .restos {
@@ -434,8 +437,7 @@ footer {
     padding-top: 0;
 
     h2 {
-      padding-top: 0;
-      padding-bottom: 20px;
+      padding: 0 0 40px 40px;
     }
 
     .restos {

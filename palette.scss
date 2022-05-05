@@ -1,5 +1,6 @@
 $violet:#9356DC;
 $rose:#FF79DA;
+
 * {
     width: 100%;
     margin: 0;
@@ -98,6 +99,32 @@ section {
             padding-bottom: 3px;
             width: 60%;
         }
+        .fa-stack {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+        
+        
+        
+            .fas {
+              opacity: 0;
+              background: rgb(255, 121, 218);
+              background: linear-gradient(30deg, rgba(255, 121, 218, 1) 39%, rgba(147, 86, 220, 1) 42%);
+              background: -webkit-linear-gradient(top right, rgba(148, 86, 220, 1.0), rgba(255, 121, 219, 1.0));
+              background: -moz-linear-gradient(top right, rgba(148, 86, 220, 1.0), rgba(255, 121, 219, 1.0));
+              background: linear-gradient(to bottom left, rgba(148, 86, 220, 1.0), rgba(255, 121, 219, 1.0));
+              -moz-background-clip: text;
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+              transition: all 0.5s ease-in-out;
+        
+              &:hover {
+                opacity: 1;
+                cursor: pointer;
+              }
+            }
+          }
     }
 
     .menu {
@@ -113,14 +140,14 @@ section {
         }
 
         .entrees {
-            animation: start 2s;
+            animation: start 1s;
             opacity: 0;
             animation-fill-mode: forwards;
         }
 
         .plats {
-            animation: start 2s;
-            animation-delay:1s;
+            animation: start 1s;
+            animation-delay: 0.75s;
             opacity: 0;
             animation-fill-mode: forwards;
 
@@ -128,8 +155,8 @@ section {
         }
 
         .desserts {
-            animation: start 2s;
-            animation-delay:2s;
+            animation: start 1s;
+            animation-delay: 1.5s;
             opacity: 0;
             animation-fill-mode: forwards;
 
@@ -164,7 +191,7 @@ section {
         padding-right: 20px;
 
         .fas {
-            opacity: 0;
+            width: 0;
             background: rgb(255, 121, 218);
             background: linear-gradient(30deg, rgba(255, 121, 218, 1) 39%, rgba(147, 86, 220, 1) 42%);
             background: linear-gradient(to bottom left, rgba(148, 86, 220, 1.0), rgba(255, 121, 219, 1.0));
@@ -174,7 +201,6 @@ section {
             transition: all 0.5s ease-in-out;
 
             &:hover {
-                opacity: 1;
                 cursor: pointer;
             }
         }
@@ -189,18 +215,21 @@ section {
         overflow: hidden;
         width: 90%;
         margin-left: 10px;
+
         .fa-solid.fa-circle-check {
             transition: all 0.75s;
         }
 
         &:hover {
+            .name{
+                width: 85%;
+            }
             .card_checked {
-                transition: 0.5s;
-                transform: translateX(5%);
+                transition: 0.5s ease-in-out;
+                width: 15%;
             }
 
             .price {
-                transform: translateX(-80%);
                 transition: 0.5s;
             }
 
@@ -213,10 +242,11 @@ section {
             display: flex;
             flex-direction: column;
             width: 100%;
+            text-overflow: ellipsis;
 
 
             h3 {
-                padding: 5px 10px 5px 10px;
+                padding: 5px 0 5px 10px;
                 font-size: 1rem;
                 font-weight: 500;
                 text-overflow: ellipsis;
@@ -226,7 +256,7 @@ section {
             }
 
             p {
-                padding: 0 10px 0 10px;
+                padding: 0 0 0 10px;
                 font-weight: 300;
                 font-size: 0.8rem;
                 text-overflow: ellipsis;
@@ -247,10 +277,12 @@ section {
             justify-content: center;
             align-items: center;
             text-align: center;
-            width: 5%;
+            width: 10%;
+            margin-left: 30px;
 
             p {
                 padding-left: 0px;
+                padding-right: 10px;
             }
         }
 
@@ -258,10 +290,10 @@ section {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 10%;
+            width: 0%;
             background-color: #99e2d0;
             color: white;
-            transform: translateX(100%);
+            transition: ease-in-out;
 
             i {
                 color: white;
@@ -338,31 +370,19 @@ footer {
         color: white;
     }
 }
-
-
-
-
-
-
-
-
 @media only screen and (min-width: 400px) {
 
-    section .card .name h3 {
-        padding: 5px 10px 5px 10px;
+.card{
+    h3{
         font-size: 1.1rem;
-        font-weight: 500;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-
     }
-
-    section .card .name p {
-        font-size: 0.9rem;
+    p{
+        font-size:0.9rem;
     }
 }
 
+
+}
 @media only screen and (min-width: 768px) {
     html {
         width: 100%;

@@ -213,10 +213,12 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 30px 0;
 }
 
 .section2 .fonctionnement {
   width: 90%;
+  padding: 30px 0;
 }
 
 .section2 #one,
@@ -309,8 +311,8 @@ header {
           align-items: center;
 }
 
-.section3 h2 {
-  padding: 10px 0 20px 40px;
+.section3 .section3 h2 {
+  padding: 20px 0;
 }
 
 .section3 .restos {
@@ -499,8 +501,7 @@ footer a {
     padding-top: 0;
   }
   .section3 h2 {
-    padding-top: 0;
-    padding-bottom: 20px;
+    padding: 0 0 40px 40px;
   }
   .section3 .restos {
     display: -webkit-box;
