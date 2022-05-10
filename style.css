@@ -161,12 +161,14 @@ header {
 .section1 h1 {
   font-weight: 900;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 .section1 p {
-  padding: 0 20px 20px 0;
+  padding: 0 0 20px 0;
   color: #666666;
   font-weight: 200;
+  text-align: center;
 }
 
 .section1 .reserver a {
@@ -316,6 +318,7 @@ header {
 }
 
 .section3 .restos {
+  padding-top: 20px;
   padding-bottom: 70px;
   width: 90%;
 }

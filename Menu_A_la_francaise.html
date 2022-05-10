@@ -5,78 +5,177 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>A la française</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&family=Shrikhand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="a_la_francaise.css">
 </head>
 
 <body>
     <header>
-        <i href="/index.html" class="fa-solid fa-arrow-left"></i>
-        <div class="logo"><img src="/assets/logo.png" alt="logo"></div>
+        <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <div class="logo"><a href="#">
+                <h1>ohmyfood</h1>
+            </a>
+        </div>
     </header>
-    <img src="/assets/3.jpg" alt="">
+    <img src="assets/3.jpg" alt="nouriture">
+
     <section>
-        <h1>À la française <span><i class="far fa-heart"></i><i class="fas fa-heart"></i></span></h1>
-        <h2>ENTRÉES</h2>
-        <div class="bar"></div>
-        <div class="entrees">
-            <div id="1">
-                <h3>Tartare de poulpe acidulé</h3>
-                <p>Aux zests d'orange <span>25€</span></p>
+        <div class="nom_resto">
+            <h2>La palette du goût</h2>
+            <span class="fa-stack">
+                <i class="fa-stack-1x far fa-heart"></i>
+                <i class="fa-stack-1x fas fa-heart"></i>
+            </span>
+        </div>
+
+        <div class="menu">
+
+            <div class="entrees">
+                <h2>ENTRÉES</h2>
+                <div id="1" class="card">
+                    <div class="name">
+                        <h3>Tartare de poulpe acidulé</h3>
+                        <p>Aux zests d'orange <span>25€</span></p>
+                    </div>
+                    <div class="price">
+                        <p><strong>25€</strong></p>
+                    </div>
+                    <div class="card_checked">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
+                <div id="2" class="card">
+                    <div class="name">
+                        <h3>Velouté de légumes d'antan</h3>
+                        <p>Carotte, panais, topinambour</p>
+                    </div>
+                </div>
+                <div class="price">
+                    <p><strong>25€</strong></p>
+                </div>
+                <div class="card_checked">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
             </div>
-            <div id="2">
-                <h3>Velouté de légumes d'antan</h3>
-                <p>Carotte, panais, topinambour <span>35€</span></p>
-            </div>
-            <div id="3">
-                <h3>Soupe à l'oignon</h3>
-                <p>Revisitée <span>20€</span></p>
+            <div id="3" class="card">
+                <div class="name">
+                    <h3>Soupe à l'oignon</h3>
+                    <p>Revisitée</p>
+                </div>
+                <div class="price">
+                    <p><strong>25€</strong></p>
+                </div>
+                <div class="card_checked">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
             </div>
         </div>
         <h2>PLATS</h2>
-        <div class="bar"></div>
         <div class="plats">
-            <div id="4">
-                <h3>Coquilles Saint-Jacques</h3>
-                <p>Aux zests d'orange <span>40€</span></p>
+            <div id="4" class="card">
+                <div class="name">
+                    <h3>Coquilles Saint-Jacques</h3>
+                    <p>Aux zests d'orange</p>
+                </div>
+                <div class="price">
+                    <p><strong>25€</strong></p>
+                </div>
+                <div class="card_checked">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
             </div>
-            <div id="5">
-                <h3>Magret de canard</h3>
-                <p>Et parmentier de pommes de terres<span>35€</span></p>
+            <div id="5" class="card">
+                <div class="name">
+                    <h3>Magret de canard</h3>
+                    <p>Et parmentier de pommes de terre</p>
+                </div>
+                <div class="price">
+                    <p><strong>25€</strong></p>
+                </div>
+                <div class="card_checked">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
             </div>
-            <div id="6">
-                <h3>Pigeonneau d'Ille-et-Vilaine</h3>
-                <p>Sur son lit de gnocchis aux légumes<span>44€</span></p>
+            <div id="6" class="card">
+                <div class="name">
+                    <h3>Pigeonneau d'Ille-et-Vilaine</h3>
+                    <p>Sur son lit de gnocchis aux légume</p>
+                </div>
+                <div class="price">
+                    <p><strong>25€</strong></p>
+                </div>
+                <div class="card_checked">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
             </div>
         </div>
         <h2>DESSERTS</h2>
-        <div class="bar"></div>
         <div class="desserts">
-            <div id="7">
-                <h3>Pétales de violettes glacés</h3>
-                <p>Et purée de noisettes<span>18€</span></p>
+            <div id="7" class="card">
+                <div class="name">
+                    <h3>Pétales de violettes glacés</h3>
+                    <p>Et purée de noisette</p>
+                </div>
+                <div class="price">
+                    <p><strong>25€</strong></p>
+                </div>
+                <div class="card_checked">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
             </div>
-            <div id="8">
-                <h3>Fondant au chocolat</h3>
-                <p>Revisité<span>22€</span></p>
+            <div id="8" class="card">
+                <div class="name">
+                    <h3>Fondant au chocolat</h3>
+                    <p>Revisit</p>
+                </div>
+                <div class="price">
+                    <p><strong>25€</strong></p>
+                </div>
+                <div class="card_checked">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
             </div>
-            <div id="9">
-                <h3>Millefeuille croustillant</h3>
-                <p>Myrtilles et pâte d'amande<span>23€</span></p>
+            <div id="9" class="card">
+                <div class="name">
+                    <h3>Millefeuille croustillant</h3>
+                    <p>Myrtilles et pâte d'amande</p>
+                </div>
+                <div class="price">
+                    <p><strong>25€</strong></p>
+                </div>
+                <div class="card_checked">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
             </div>
         </div>
-        <button>Commander</button>
+        </div>
+        <div class="btn">
+            <button>Commander</button>
+        </div>
     </section>
     <footer>
-        <img src="/assets/logo.png" alt="logo">
+        <h2>ohmyfood</h2>
         <ul>
-            <li><span><i class="fa-solid fa-utensils"></i></span>
-                <p>Proposer un restaurant</p>
-            </li>
-            <li><span><i class="fa-solid fa-handshake-angle"></i></span>
-                <p>Devenir partenaire</p>
+            <li>
+                <a href="#">
+                    <p><i class="fa-solid fa-utensils"></i>Proposer un restaurant</p>
+                </a>
             </li>
             <li>
-                <p>Mentions légales</p>
+                <a href="#">
+                    <p><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p>Mentions légales</p>
+                </a>
             </li>
         </ul>
     </footer>
