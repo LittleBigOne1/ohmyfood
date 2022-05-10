@@ -85,7 +85,7 @@ section {
     border-radius: 1.5rem 1.5rem 0 0;
     transform: translateY(-5%);
     box-sizing: border-box;
-    
+
 
 
     .nom_resto {
@@ -101,35 +101,38 @@ section {
             padding-left: 5px;
             padding-bottom: 3px;
             width: 60%;
-            .fa-stack {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 2rem;
+
             
+        }
+
+        .fa-stack {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
             
-            
-                .fas {
-                    opacity: 0;
-                    background: rgb(255, 121, 218);
-                    background: linear-gradient(30deg, rgba(255, 121, 218, 1) 39%, rgba(147, 86, 220, 1) 42%);
-                    background: -webkit-linear-gradient(top right, rgba(148, 86, 220, 1.0), rgba(255, 121, 219, 1.0));
-                    background: -moz-linear-gradient(top right, rgba(148, 86, 220, 1.0), rgba(255, 121, 219, 1.0));
-                    background: linear-gradient(to bottom left, rgba(148, 86, 220, 1.0), rgba(255, 121, 219, 1.0));
-                    -moz-background-clip: text;
-                    background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    transition: all 0.5s ease-in-out;
-            
-                    &:hover {
-                        opacity: 1;
-                        cursor: pointer;
-                    }
+
+
+
+            .fas {
+                opacity: 0;
+                background: rgb(255, 121, 218);
+                background: linear-gradient(30deg, rgba(255, 121, 218, 1) 39%, rgba(147, 86, 220, 1) 42%);
+                background: -webkit-linear-gradient(top right, rgba(148, 86, 220, 1.0), rgba(255, 121, 219, 1.0));
+                background: -moz-linear-gradient(top right, rgba(148, 86, 220, 1.0), rgba(255, 121, 219, 1.0));
+                background: linear-gradient(to bottom left, rgba(148, 86, 220, 1.0), rgba(255, 121, 219, 1.0));
+                -moz-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transition: all 0.5s ease-in-out;
+                width: 100%;
+
+                &:hover {
+                    opacity: 1;
+                    cursor: pointer;
                 }
             }
         }
-
-        
     }
 
     .menu {
@@ -216,11 +219,12 @@ section {
         display: flex;
         background-color: white;
         border-radius: 0.8rem;
-        margin: 10px 0 20px 0;
+        margin: 10px auto 20px auto;
         box-shadow: 0.2rem 0.2rem 0.6rem #bdbdbd;
         overflow: hidden;
-        width: 90%;
-        margin-left: 10px;
+        width: 96%;
+        transition: all 0.75s;
+
 
         .fa-solid.fa-circle-check {
             transition: all 0.75s;
@@ -228,16 +232,17 @@ section {
 
         &:hover {
             .name {
-                width: 85%;
+                min-width: 60%;
             }
 
             .card_checked {
                 transition: 0.5s ease-in-out;
-                width: 15%;
+                width: 150px;
             }
 
             .price {
                 transition: 0.5s;
+                width:100px;
             }
 
             .fa-solid.fa-circle-check {
@@ -248,8 +253,11 @@ section {
         .name {
             display: flex;
             flex-direction: column;
-            width: 100%;
             text-overflow: ellipsis;
+            min-width: 75%;
+            transition: all 0.75s;
+
+            
 
 
             h3 {
@@ -284,8 +292,10 @@ section {
             justify-content: center;
             align-items: center;
             text-align: center;
-            width: 10%;
+            width: 100px;
             margin-left: 30px;
+            transition: all 0.75s;
+
 
             p {
                 padding-left: 0px;
@@ -301,6 +311,8 @@ section {
             background-color: #99e2d0;
             color: white;
             transition: ease-in-out;
+            transition: all 0.75s;
+
 
             i {
                 color: white;
@@ -430,7 +442,7 @@ footer {
     }
 
 
-    
+
 }
 
 
@@ -454,7 +466,7 @@ footer {
         object-fit: cover;
     }
 
-    section .nom_resto h2 {
+    section .pnom_resto h2 {
         text-align: left;
     }
 

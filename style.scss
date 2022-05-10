@@ -30,7 +30,7 @@ body {
     align-items: center;
     animation: loader 1000ms 4000ms ease-in-out forwards;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     z-index: 999;
     background-color: #343434;
