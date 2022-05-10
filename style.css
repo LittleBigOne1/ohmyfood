@@ -62,7 +62,7 @@ body .loader {
   overflow: hidden;
 }
 
-body .loader h1 {
+body .loader p {
   text-align: center;
   width: 100%;
   margin: 0;
