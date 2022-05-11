@@ -145,6 +145,7 @@ section {
             font-size: 1.3rem;
             border-bottom: 3px solid #a5e2d5;
             width: 30%;
+            letter-spacing: 1px;
 
         }
 
@@ -455,7 +456,7 @@ footer {
 
 
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1210px) {
     html {
         width: 100%;
     }
@@ -466,7 +467,7 @@ footer {
         object-fit: cover;
     }
 
-    section .pnom_resto h2 {
+    section .nom_resto h2 {
         text-align: left;
     }
 
@@ -479,6 +480,7 @@ footer {
 
         h2 {
             height: 20px;
+            padding: 20px 0 10px 30px;
         }
 
     }
