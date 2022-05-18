@@ -102,7 +102,7 @@ section {
             padding-bottom: 3px;
             width: 60%;
 
-            
+
         }
 
         .fa-stack {
@@ -110,7 +110,7 @@ section {
             justify-content: center;
             align-items: center;
             font-size: 2rem;
-            
+
 
 
 
@@ -145,14 +145,14 @@ section {
             font-size: 1.3rem;
             border-bottom: 3px solid #a5e2d5;
             width: 30%;
-            letter-spacing: 1px;
-
         }
 
         .entrees {
             animation: start 1s;
             opacity: 0;
             animation-fill-mode: forwards;
+            box-sizing: border-box;
+
         }
 
         .plats {
@@ -160,6 +160,8 @@ section {
             animation-delay: 0.75s;
             opacity: 0;
             animation-fill-mode: forwards;
+            box-sizing: border-box;
+
 
 
         }
@@ -169,6 +171,8 @@ section {
             animation-delay: 1.5s;
             opacity: 0;
             animation-fill-mode: forwards;
+            box-sizing: border-box;
+
 
 
         }
@@ -238,12 +242,12 @@ section {
 
             .card_checked {
                 transition: 0.5s ease-in-out;
-                width: 150px;
+                width: 100px;
             }
 
             .price {
                 transition: 0.5s;
-                width:100px;
+                width: 40px;
             }
 
             .fa-solid.fa-circle-check {
@@ -258,7 +262,7 @@ section {
             min-width: 75%;
             transition: all 0.75s;
 
-            
+
 
 
             h3 {
@@ -293,7 +297,7 @@ section {
             justify-content: center;
             align-items: center;
             text-align: center;
-            width: 100px;
+            width: 40px;
             margin-left: 30px;
             transition: all 0.75s;
 
@@ -478,9 +482,12 @@ footer {
         margin-right: auto;
 
 
-        h2 {
+        section .nom_resto h2 {
             height: 20px;
             padding: 20px 0 10px 30px;
+            letter-spacing: 0.08rem;
+            font-size: 10rem;
+
         }
 
     }
