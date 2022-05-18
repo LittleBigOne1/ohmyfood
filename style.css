@@ -223,6 +223,11 @@ header {
   padding: 30px 0;
 }
 
+.section2 .fonctionnement h3 {
+  font-size: 1rem;
+  padding-right: 20px;
+}
+
 .section2 #one,
 .section2 #two,
 .section2 #three {
@@ -240,12 +245,6 @@ header {
           box-shadow: 0px 0px 18px -6px rgba(0, 0, 0, 0.75);
   -webkit-transition: ease-in-out 0.2s;
   transition: ease-in-out 0.2s;
-}
-
-.section2 #one p,
-.section2 #two p,
-.section2 #three p {
-  padding-right: 20px;
 }
 
 .section2 #one .fontionnement__body,
