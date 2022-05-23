@@ -524,6 +524,7 @@ footer i {
     margin-bottom: 20px;
   }
   footer ul {
+    text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
