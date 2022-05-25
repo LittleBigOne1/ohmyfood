@@ -1,16 +1,13 @@
 $violet:#9356DC;
 $rose:#FF79DA;
-
 * {
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
-
 html {
   width: 100%;
 }
-
 body {
   width: 100%;
 @keyframes loader {
@@ -59,7 +56,6 @@ body {
     }
   }
 }
-
 .logo {
   display: flex;
   justify-content: center;
@@ -87,11 +83,9 @@ body {
     width: 20px;
   }
 }
-
 header {
   width: 100%;
 }
-
 .location {
   display: flex;
   justify-content: center;
@@ -112,7 +106,6 @@ header {
     width: 20px;
   }
 }
-
 .section1 {
   width: 100%;
   display: flex;
@@ -166,7 +159,6 @@ header {
     }
   }
 }
-
 .section2 {
   display: flex;
   justify-content: center;
@@ -177,6 +169,7 @@ header {
   .fonctionnement {
     width: 90%;
     padding: 30px 0;
+    
     h3{
       font-size: 1rem;
       padding-right: 20px;
@@ -237,7 +230,6 @@ header {
 
 
 }
-
 .section3 {
   width: 100%;
   display: flex;
@@ -355,7 +347,6 @@ header {
     }
   }
 }
-
 footer {
   padding: 20px 10px;
   margin-top: -50px;
@@ -392,19 +383,6 @@ footer {
 
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (min-width: 768px) {
   html {
     width: 100%;
@@ -475,14 +453,6 @@ footer {
     }
   }
 }
-
-
-
-
-
-
-
-
 @media only screen and (min-width: 992px) {
   html {
     width: 100%;
