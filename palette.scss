@@ -3,12 +3,17 @@
 @import "./component.scss";
 @import "./base.scss";
 
-html,body {
+html,
+body {
     width: 100%;
 }
 
+img {
+    height: 200px;
+}
+
 header {
-    
+
     .fa-solid-fa-arrow-left {
         width: 40px;
     }
@@ -26,6 +31,7 @@ header {
 
         }
     }
+
 }
 
 section {
@@ -52,7 +58,7 @@ section {
 
         }
 
-        
+
     }
 
     .menu {
@@ -64,27 +70,27 @@ section {
             padding: 20px 0 10px 15px;
             font-size: 1.3rem;
             border-bottom: 3px solid #a5e2d5;
-            width: 30%;
+            width: 10%;
         }
 
         .entrees {
             -webkit-animation: start 1s;
-                    animation: start 1s;
+            animation: start 1s;
             opacity: 0;
             -webkit-animation-fill-mode: forwards;
-                    animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
             box-sizing: border-box;
 
         }
 
         .plats {
             -webkit-animation: start 1s;
-                    animation: start 1s;
+            animation: start 1s;
             -webkit-animation-delay: 0.75s;
-                    animation-delay: 0.75s;
+            animation-delay: 0.75s;
             opacity: 0;
             -webkit-animation-fill-mode: forwards;
-                    animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
             box-sizing: border-box;
 
 
@@ -93,12 +99,12 @@ section {
 
         .desserts {
             -webkit-animation: start 1s;
-                    animation: start 1s;
+            animation: start 1s;
             -webkit-animation-delay: 1.5s;
-                    animation-delay: 1.5s;
+            animation-delay: 1.5s;
             opacity: 0;
             -webkit-animation-fill-mode: forwards;
-                    animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
             box-sizing: border-box;
 
 
@@ -273,12 +279,6 @@ section {
         width: 100%;
     }
 
-    .img {
-        width: 100%;
-        height: 300px;
-        -o-object-fit: cover;
-           object-fit: cover;
-    }
 
     .nom_resto {
         h2 {
@@ -328,7 +328,7 @@ section {
         width: 100%;
         height: 500px;
         -o-object-fit: cover;
-           object-fit: cover;
+        object-fit: cover;
     }
 
     section .nom_resto h2 {
@@ -359,19 +359,6 @@ section {
 
     .card_checked {
         width: 30%;
-    }
-
-    section {
-        .btn {
-            display: flex;
-            justify-content: center;
-
-            button {
-                width: 25%;
-
-            }
-        }
-
     }
 
 }

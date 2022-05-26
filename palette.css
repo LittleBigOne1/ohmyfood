@@ -1,15 +1,13 @@
+img {
+  height: 300px;
+  object-fit: cover;
+}
 .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 100px;
+  height: 60px;
 }
 
 .logo a {
@@ -22,6 +20,7 @@
   font-family: 'Shrikhand', cursive;
   color: black;
   text-decoration: none;
+  transform: translateX(-5rem);
 }
 
 .logo .fa-solid-fa-location-dot {
@@ -33,27 +32,19 @@
 }
 
 .fa-stack {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-size: 2rem;
 }
 
 .fa-stack .fas {
   opacity: 0;
   background: linear-gradient(30deg, #ff79da 39%, #9356dc 42%);
-  background: -webkit-gradient(linear, right top, left bottom, from(#9456dc), to(#ff79db));
   background: linear-gradient(to bottom left, #9456dc, #ff79db);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -95,8 +86,6 @@ footer i {
 footer a {
   text-decoration: none;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -121,19 +110,10 @@ footer a {
 }
 
 .loader {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   -webkit-animation: loader 1000ms 4000ms ease-in-out forwards;
   animation: loader 1000ms 4000ms ease-in-out forwards;
   position: fixed;
@@ -179,18 +159,15 @@ button {
   color: white;
   font-size: 1.2rem;
   cursor: pointer;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-box-shadow: 0px 0px 26px -13px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px 0px 26px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 26px -13px rgba(0, 0, 0, 0.75);
   -webkit-animation: 0.3s ease-in-out;
   animation: 0.3s ease-in-out;
 }
 
 button:hover {
   opacity: 0.8;
-  -webkit-box-shadow: 0px 0px 30px -6px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px 0px 30px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 30px -6px rgba(0, 0, 0, 0.75);
 }
 
 * {
@@ -204,20 +181,16 @@ html, body {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding: 1% 0;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
+header img{
+  height: 300px;
+}
 header .fa-solid-fa-arrow-left {
   width: 40px;
 }
@@ -238,23 +211,17 @@ section {
   width: 100%;
   background-color: #f4f4f4;
   border-radius: 1.5rem 1.5rem 0 0;
-  -webkit-transform: translateY(-5%);
-          transform: translateY(-5%);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  transform: translateY(-5%);
+  box-sizing: border-box;
 }
 
 section .nom_resto {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 section .nom_resto h2 {
   font-family: 'Shrikhand', cursive;
   padding: 20px 0 20px 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 1.3rem;
   font-weight: 300;
@@ -273,7 +240,7 @@ section .menu h2 {
   padding: 20px 0 10px 15px;
   font-size: 1.3rem;
   border-bottom: 3px solid #a5e2d5;
-  width: 30%;
+  width: 10%;
 }
 
 section .menu .entrees {
@@ -282,8 +249,7 @@ section .menu .entrees {
   opacity: 0;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 section .menu .plats {
@@ -294,8 +260,7 @@ section .menu .plats {
   opacity: 0;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 section .menu .desserts {
@@ -306,33 +271,28 @@ section .menu .desserts {
   opacity: 0;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @-webkit-keyframes start {
   from {
     opacity: 0;
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 @keyframes start {
   from {
     opacity: 0;
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -347,15 +307,12 @@ section .fa-stack {
 }
 
 section .fa-stack .fas {
-  width: 0;
   background: #ff79da;
   background: linear-gradient(30deg, #ff79da 39%, #9356dc 42%);
-  background: -webkit-gradient(linear, right top, left bottom, from(#9456dc), to(#ff79db));
   background: linear-gradient(to bottom left, #9456dc, #ff79db);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -364,22 +321,17 @@ section .fa-stack .fas:hover {
 }
 
 section .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-color: white;
   border-radius: 0.8rem;
   margin: 10px auto 20px auto;
-  -webkit-box-shadow: 0.2rem 0.2rem 0.6rem #bdbdbd;
-          box-shadow: 0.2rem 0.2rem 0.6rem #bdbdbd;
+  box-shadow: 0.2rem 0.2rem 0.6rem #bdbdbd;
   overflow: hidden;
   width: 96%;
-  -webkit-transition: all 0.75s;
   transition: all 0.75s;
 }
 
 section .card .fa-solid.fa-circle-check {
-  -webkit-transition: all 0.75s;
   transition: all 0.75s;
 }
 
@@ -388,33 +340,24 @@ section .card:hover .name {
 }
 
 section .card:hover .card_checked {
-  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   width: 100px;
 }
 
 section .card:hover .price {
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   width: 40px;
 }
 
 section .card:hover .fa-solid.fa-circle-check {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 section .card .name {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-overflow: ellipsis;
   min-width: 75%;
-  -webkit-transition: all 0.75s;
   transition: all 0.75s;
 }
 
@@ -443,19 +386,12 @@ section .card .name p span {
 }
 
 section .card .price {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   width: 40px;
   margin-left: 30px;
-  -webkit-transition: all 0.75s;
   transition: all 0.75s;
 }
 
@@ -465,21 +401,13 @@ section .card .price p {
 }
 
 section .card .card_checked {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 0%;
   background-color: #99e2d0;
   color: white;
-  -webkit-transition: ease-in-out;
   transition: ease-in-out;
-  -webkit-transition: all 0.75s;
   transition: all 0.75s;
 }
 
@@ -491,29 +419,31 @@ section .card .card_checked i {
   vertical-align: middle;
   padding-top: 35px;
 }
-
+.btn{
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
 section button {
-  width: 80%;
+  width: 50%;
   padding: 15px 0;
-  margin: 40px 0;
-  margin-left: 9%;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   border: none;
   border-radius: 2rem;
   color: white;
   font-size: 1.2rem;
   cursor: pointer;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-box-shadow: 0px 0px 26px -13px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px 0px 26px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 26px -13px rgba(0, 0, 0, 0.75);
   -webkit-animation: 0.3s ease-in-out;
   animation: 0.3s ease-in-out;
 }
 
 section button:hover {
   opacity: 0.8;
-  -webkit-box-shadow: 0px 0px 30px -6px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px 0px 30px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 30px -6px rgba(0, 0, 0, 0.75);
 }
 
 footer {
@@ -522,8 +452,7 @@ footer {
   margin-top: -50px;
   background-color: #343434;
   color: white;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 footer h2 {
@@ -542,8 +471,6 @@ footer ul {
 }
 
 footer li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-left: 5px;
   width: 100%;
@@ -573,12 +500,7 @@ footer i {
   html {
     width: 100%;
   }
-  .img {
-    width: 100%;
-    height: 300px;
-    -o-object-fit: cover;
-    object-fit: cover;
-  }
+
   .nom_resto h2 {
     font-size: 1.8rem;
   }
@@ -587,11 +509,8 @@ footer i {
     margin-bottom: 20px;
   }
   footer ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   footer a {
     color: white;
@@ -605,7 +524,7 @@ footer i {
   }
   .img {
     width: 100%;
-    height: 500px;
+    height: 400px;
     -o-object-fit: cover;
     object-fit: cover;
   }
@@ -613,8 +532,6 @@ footer i {
     text-align: left;
   }
   section .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -633,15 +550,10 @@ footer i {
     width: 30%;
   }
   section .btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   section .btn button {
     width: 25%;
   }
 }
-/*# sourceMappingURL=palette.css.map */
