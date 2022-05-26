@@ -193,7 +193,13 @@ button:hover {
           box-shadow: 0px 0px 30px -6px rgba(0, 0, 0, 0.75);
 }
 
-html {
+* {
+  width: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
   width: 100%;
 }
 
@@ -226,10 +232,6 @@ header a i {
   color: black;
   text-align: center;
   font-size: 2rem;
-}
-
-body {
-  width: 100%;
 }
 
 section {
@@ -336,6 +338,29 @@ section .menu .desserts {
 
 section img {
   width: 100%;
+}
+
+section .fa-stack {
+  font-size: 2rem;
+  margin-left: auto;
+  padding-right: 20px;
+}
+
+section .fa-stack .fas {
+  width: 0;
+  background: #ff79da;
+  background: linear-gradient(30deg, #ff79da 39%, #9356dc 42%);
+  background: -webkit-gradient(linear, right top, left bottom, from(#9456dc), to(#ff79db));
+  background: linear-gradient(to bottom left, #9456dc, #ff79db);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+section .fa-stack .fas:hover {
+  cursor: pointer;
 }
 
 section .card {
@@ -467,6 +492,74 @@ section .card .card_checked i {
   padding-top: 35px;
 }
 
+section button {
+  width: 80%;
+  padding: 15px 0;
+  margin: 40px 0;
+  margin-left: 9%;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-box-shadow: 0px 0px 26px -13px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 26px -13px rgba(0, 0, 0, 0.75);
+  -webkit-animation: 0.3s ease-in-out;
+  animation: 0.3s ease-in-out;
+}
+
+section button:hover {
+  opacity: 0.8;
+  -webkit-box-shadow: 0px 0px 30px -6px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 30px -6px rgba(0, 0, 0, 0.75);
+}
+
+footer {
+  width: 100%;
+  padding: 20px 20px;
+  margin-top: -50px;
+  background-color: #343434;
+  color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+footer h2 {
+  color: white;
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.1rem;
+}
+
+footer p {
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 5px;
+  width: 100%;
+}
+
+footer li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer i {
+  padding: 5px 5px;
+  width: 20px;
+  color: white;
+}
+
 @media only screen and (min-width: 400px) {
   .card h3 {
     font-size: 1.1rem;
@@ -549,26 +642,6 @@ section .card .card_checked i {
   }
   section .btn button {
     width: 25%;
-  }
-  footer {
-    padding: 20px 0;
-  }
-  footer h2 {
-    padding-top: 20px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  footer ul {
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  footer a {
-    color: white;
-    text-decoration: none;
   }
 }
 /*# sourceMappingURL=palette.css.map */
