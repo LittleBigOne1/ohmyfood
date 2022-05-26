@@ -1,86 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-}
-
-html {
-  width: 100%;
-}
-
-body {
-  width: 100%;
-}
-
-@-webkit-keyframes loader {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    height: 0vh;
-  }
-}
-
-@keyframes loader {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    height: 0vh;
-  }
-}
-
-body .loader {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-animation: loader 1000ms 4000ms ease-in-out forwards;
-          animation: loader 1000ms 4000ms ease-in-out forwards;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  z-index: 999;
-  background-color: #343434;
-  -webkit-animation: loader 1.5s ease-in-out;
-          animation: loader 1.5s ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-  overflow: hidden;
-}
-
-body .loader p {
-  text-align: center;
-  width: 100%;
-  margin: 0;
-  padding-top: 140px;
-  padding: 0;
-  font-family: 'Shrikhand', cursive;
-  font-weight: 900;
-  font-size: 3em;
-  color: #9356DC;
-  text-shadow: 2px 2px 1px #FF79DA;
-}
-
-body .loader .fa-spin {
-  color: #FF79DA;
-  margin-top: 30px;
-  font-size: 3rem;
-}
-
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,7 +32,150 @@ body .loader .fa-spin {
   width: 20px;
 }
 
-header {
+.fa-stack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+}
+
+.fa-stack .fas {
+  opacity: 0;
+  background: linear-gradient(30deg, #ff79da 39%, #9356dc 42%);
+  background: -webkit-gradient(linear, right top, left bottom, from(#9456dc), to(#ff79db));
+  background: linear-gradient(to bottom left, #9456dc, #ff79db);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.fa-stack .fas:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+footer {
+  padding: 20px 10px;
+  margin-top: -50px;
+  background-color: #343434;
+  color: white;
+}
+
+footer h2 {
+  color: white;
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.4rem;
+  padding: 10px 10px;
+}
+
+footer p {
+  padding-bottom: 10px;
+}
+
+footer li {
+  padding-left: 5px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+footer i {
+  padding: 5px 5px;
+  width: 20px;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    height: 0vh;
+  }
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    height: 0vh;
+  }
+}
+
+.loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: loader 1000ms 4000ms ease-in-out forwards;
+  animation: loader 1000ms 4000ms ease-in-out forwards;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  background-color: #343434;
+  -webkit-animation: loader 1.5s ease-in-out;
+  animation: loader 1.5s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+  overflow: hidden;
+}
+
+.loader p {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding-top: 140px;
+  padding: 0;
+  font-family: 'Shrikhand', cursive;
+  font-weight: 900;
+  font-size: 3em;
+  color: #9356DC;
+  text-shadow: 2px 2px 1px #FF79DA;
+}
+
+.loader .fa-spin {
+  color: #FF79DA;
+  margin-top: 30px;
+  font-size: 3rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body, header {
   width: 100%;
 }
 
@@ -333,7 +393,7 @@ header {
   background-color: white;
   position: relative;
   -webkit-box-shadow: 0px 0px 26px -13px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 26px -13px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 26px -13px rgba(0, 0, 0, 0.75);
   -webkit-transition: ease-in-out 0.2s;
   transition: ease-in-out 0.2s;
 }
@@ -345,7 +405,7 @@ header {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
   -webkit-box-shadow: 0px 0px 27px -7px rgba(0, 0, 0, 0.84);
-  box-shadow: 0px 0px 27px -7px rgba(0, 0, 0, 0.84);
+          box-shadow: 0px 0px 27px -7px rgba(0, 0, 0, 0.84);
 }
 
 .section3 img {
@@ -353,7 +413,7 @@ header {
   height: 70%;
   border-radius: 1.2rem 1.2rem 0 0;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .section3 .body__card {
@@ -417,10 +477,10 @@ header {
 
 .section3 .fa-stack .fas {
   opacity: 0;
-  background: #ff79da;
   background: linear-gradient(30deg, #ff79da 39%, #9356dc 42%);
   background: -webkit-gradient(linear, right top, left bottom, from(#9456dc), to(#ff79db));
   background: linear-gradient(to bottom left, #9456dc, #ff79db);
+  -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-transition: all 0.5s ease-in-out;

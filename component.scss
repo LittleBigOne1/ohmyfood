@@ -1,0 +1,86 @@
+@-webkit-keyframes loader {
+    0% {
+      opacity: 1;
+
+    }
+
+    100% {
+      opacity: 0;
+      height: 0vh;
+    }
+  }
+
+  @keyframes loader {
+    0% {
+      opacity: 1;
+
+    }
+
+    100% {
+      opacity: 0;
+      height: 0vh;
+    }
+  }
+
+  .loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation: loader 1000ms 4000ms ease-in-out forwards;
+    animation: loader 1000ms 4000ms ease-in-out forwards;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    background-color: #343434;
+    -webkit-animation: loader 1.5s ease-in-out;
+    animation: loader 1.5s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+    overflow: hidden;
+
+    p {
+      text-align: center;
+      width: 100%;
+      margin: 0;
+      padding-top: 140px;
+      padding: 0;
+      font-family: 'Shrikhand', cursive;
+      font-weight: 900;
+      font-size: 3em;
+      color: $violet;
+      text-shadow: 2px 2px 1px $rose;
+    }
+
+    .fa-spin {
+      color: $rose;
+      margin-top: 30px;
+      font-size: 3rem;
+    }
+  }
+
+
+
+  button {
+    width: 80%;
+    padding: 15px 0;
+    margin: 40px 0;
+    margin-left: 9%;
+    border: none;
+    border-radius: 2rem;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: linear-gradient($rose, $violet);
+    box-shadow: 0px 0px 26px -13px rgba(0, 0, 0, 0.75);
+    -webkit-animation: 0.3s ease-in-out;
+    animation: 0.3s ease-in-out;
+
+    &:hover {
+        opacity: 0.8;
+        box-shadow: 0px 0px 30px -6px rgba(0, 0, 0, 0.75);
+    }
+}

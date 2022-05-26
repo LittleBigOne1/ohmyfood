@@ -1,9 +1,9 @@
-$violet:#9356DC;
-$rose:#FF79DA;
+@import "./layout.scss";
+@import "./variables.scss";
+@import "./component.scss";
 
 * {
     width: 100%;
-    margin: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 
@@ -39,35 +39,6 @@ header {
         }
     }
 
-
-    .logo {
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        cursor: pointer;
-
-        a {
-            text-decoration: none;
-            width: 100%;
-
-            h1 {
-                width: 100%;
-                text-align: center;
-
-            }
-        }
-
-
-
-        h1 {
-            width: 50%;
-            font-family: 'Shrikhand', cursive;
-            color: black;
-            text-decoration: none;
-        }
-    }
 
 }
 
@@ -105,34 +76,7 @@ section {
 
         }
 
-        .fa-stack {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2rem;
-
-
-
-
-            .fas {
-                opacity: 0;
-                background: rgb(255, 121, 218);
-                background: linear-gradient(30deg, rgba(255, 121, 218, 1) 39%, rgba(147, 86, 220, 1) 42%);
-                background: -webkit-linear-gradient(top right, rgba(148, 86, 220, 1.0), rgba(255, 121, 219, 1.0));
-                background: -moz-linear-gradient(top right, rgba(148, 86, 220, 1.0), rgba(255, 121, 219, 1.0));
-                background: linear-gradient(to bottom left, rgba(148, 86, 220, 1.0), rgba(255, 121, 219, 1.0));
-                -moz-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-                transition: all 0.5s ease-in-out;
-                width: 100%;
-
-                &:hover {
-                    opacity: 1;
-                    cursor: pointer;
-                }
-            }
-        }
+        
     }
 
     .menu {
@@ -148,17 +92,22 @@ section {
         }
 
         .entrees {
+            -webkit-animation: start 1s;
             animation: start 1s;
             opacity: 0;
+            -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
             box-sizing: border-box;
 
         }
 
         .plats {
+            -webkit-animation: start 1s;
             animation: start 1s;
+            -webkit-animation-delay: 0.75s;
             animation-delay: 0.75s;
             opacity: 0;
+            -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
             box-sizing: border-box;
 
@@ -167,14 +116,30 @@ section {
         }
 
         .desserts {
+            -webkit-animation: start 1s;
             animation: start 1s;
+            -webkit-animation-delay: 1.5s;
             animation-delay: 1.5s;
             opacity: 0;
+            -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
             box-sizing: border-box;
 
 
 
+        }
+
+        @-webkit-keyframes start {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+
+            }
         }
 
         @keyframes start {
@@ -195,29 +160,6 @@ section {
     img {
         width: 100%;
 
-    }
-
-
-
-    .fa-stack {
-        font-size: 2rem;
-        margin-left: auto;
-        padding-right: 20px;
-
-        .fas {
-            width: 0;
-            background: rgb(255, 121, 218);
-            background: linear-gradient(30deg, rgba(255, 121, 218, 1) 39%, rgba(147, 86, 220, 1) 42%);
-            background: linear-gradient(to bottom left, rgba(148, 86, 220, 1.0), rgba(255, 121, 219, 1.0));
-            -moz-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            transition: all 0.5s ease-in-out;
-
-            &:hover {
-                cursor: pointer;
-            }
-        }
     }
 
     .card {
@@ -332,68 +274,9 @@ section {
         }
     }
 
-    button {
-        width: 80%;
-        padding: 15px 0;
-        margin: 40px 0;
-        margin-left: 9%;
-        border: none;
-        border-radius: 2rem;
-        color: white;
-        font-size: 1.2rem;
-        cursor: pointer;
-        background: linear-gradient($rose, $violet);
-        box-shadow: 0px 0px 26px -13px rgba(0, 0, 0, 0.75);
-        animation: 0.3s ease-in-out;
-
-        &:hover {
-            opacity: 0.8;
-            box-shadow: 0px 0px 30px -6px rgba(0, 0, 0, 0.75);
-        }
-    }
+    
 }
 
-footer {
-    width: 100%;
-    padding: 20px 20px;
-    margin-top: -50px;
-    background-color: #343434;
-    color: white;
-    box-sizing: border-box;
-
-    h2 {
-        color: rgb(255, 255, 255);
-        font-family: 'Shrikhand', cursive;
-        font-size: 1.1rem;
-    }
-
-    p {
-        padding-bottom: 10px;
-        width: 100%;
-
-    }
-
-    ul {
-        padding-left: 0;
-    }
-
-    li {
-        display: flex;
-        padding-left: 5px;
-        width: 100%;
-
-        a {
-            text-decoration: none;
-            color: white;
-        }
-    }
-
-    i {
-        padding: 5px 5px;
-        width: 20px;
-        color: white;
-    }
-}
 
 @media only screen and (min-width: 400px) {
 
@@ -418,6 +301,7 @@ footer {
     .img {
         width: 100%;
         height: 300px;
+        -o-object-fit: cover;
         object-fit: cover;
     }
 
@@ -468,6 +352,7 @@ footer {
     .img {
         width: 100%;
         height: 500px;
+        -o-object-fit: cover;
         object-fit: cover;
     }
 
