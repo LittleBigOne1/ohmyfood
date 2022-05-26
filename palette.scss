@@ -138,30 +138,6 @@ section {
 
     }
 
-
-
-    .fa-stack {
-        font-size: 2rem;
-        margin-left: auto;
-        padding-right: 20px;
-
-        .fas {
-            width: 0;
-            background: rgb(255, 121, 218);
-            background: linear-gradient(30deg, rgba(255, 121, 218, 1) 39%, rgba(147, 86, 220, 1) 42%);
-            background: linear-gradient(to bottom left, rgba(148, 86, 220, 1.0), rgba(255, 121, 219, 1.0));
-            -moz-background-clip: text;
-            -webkit-background-clip: text;
-                    background-clip: text;
-            -webkit-text-fill-color: transparent;
-            transition: all 0.5s ease-in-out;
-
-            &:hover {
-                cursor: pointer;
-            }
-        }
-    }
-
     .card {
         display: flex;
         background-color: white;
